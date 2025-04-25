@@ -19,7 +19,7 @@ app.use(express.json());
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio', {
+mongoose.connect(process.env.MONGODB_URI , {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
